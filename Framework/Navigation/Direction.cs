@@ -1,5 +1,5 @@
 
-namespace Raven.Pathfinding.Framework.Navigation  {
+namespace Raven.Pathfinding.Framework.Navigation {
     public enum Direction {
         North,
         South,

@@ -4,8 +4,7 @@ using Raven.Pathfinding.Framework.Navigation;
 using Raven.Pathfinding.Util.Nodes;
 using Raven.Util;
 
-namespace Raven.Pathfinding.AStar
-{
+namespace Raven.Pathfinding.AStar {
     public class AStarPathfinder : IPathfinder {
         private PathNode _start;
         private Node _target;
