@@ -1,10 +1,12 @@
-using Raven.Pathfinding.Util.Config;
-using Raven.Pathfinding.Util.Navigation;
+using Raven.Pathfinding.Framework;
+using Raven.Pathfinding.Framework.Config;
+using Raven.Pathfinding.Framework.Navigation;
 using Raven.Pathfinding.Util.Nodes;
 using Raven.Util;
 
-namespace Raven.Pathfinding.AStar {
-    public class AStarPathfinder {
+namespace Raven.Pathfinding.AStar
+{
+    public class AStarPathfinder : IPathfinder {
         private PathNode _start;
         private Node _target;
         private Node[ , ] _map;
@@ -117,9 +119,5 @@ namespace Raven.Pathfinding.AStar {
 
             return path;
         }
-    }
-
-    public enum PathfindingStatus {
-        Searching, Finished, Invalid, Waiting
     }
 }

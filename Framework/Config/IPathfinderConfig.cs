@@ -1,6 +1,7 @@
+
 using Raven.Pathfinding.Util.Nodes;
 
-namespace Raven.Pathfinding.Util.Config {
+namespace Raven.Pathfinding.Framework.Config {
     public interface IPathfinderConfig {
         public Node Start { get; set; }
         public Node Target { get; set; }

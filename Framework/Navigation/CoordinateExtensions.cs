@@ -1,6 +1,6 @@
 using Raven.Util;
 
-namespace Raven.Pathfinding.Util.Navigation {
+namespace Raven.Pathfinding.Framework.Navigation {
     public static class CoordinateExtensions {
         public static Direction ToDirection (this Coordinate vec) => vec switch {
             Coordinate v when vec.Equals(Direction.North.ToCoordinate()) => Direction.North,
