@@ -5,17 +5,17 @@
     <ImplicitUsings>enable</ImplicitUsings>
     <Nullable>enable</Nullable>
     <PackageID>Raven.Pathfinding.AStar</PackageID>
-    <Version>1.0.2</Version>
+    <Version>1.0.3</Version>
     <Authors>Raven Crowe</Authors>
     <Copyright>Copyright (c) Raven Crowe 2023</Copyright>
     <Description>An A* pathfinder implementation</Description>
   </PropertyGroup>
 
   <ItemGroup>
-    <PackageReference Include="Raven.Util" Version="1.0.1" />
+    <PackageReference Include="Raven.Util" Version="1.0.3" />
   </ItemGroup>
 
   <ItemGroup>
-    <ProjectReference Include="..\Framework\Framework.csproj" />
+    <ProjectReference Include="..\Raven.Pathfinding.Framework\Raven.Pathfinding.Framework.csproj" />
   </ItemGroup>
 </Project>

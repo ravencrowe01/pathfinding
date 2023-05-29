@@ -1,5 +1,5 @@
 
-using Raven.Pathfinding.Util.Nodes;
+using Raven.Pathfinding.Framework.Nodes;
 
 namespace Raven.Pathfinding.Framework.Config {
     public interface IPathfinderConfig {

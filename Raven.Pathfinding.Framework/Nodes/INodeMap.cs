@@ -1,4 +1,4 @@
-namespace Raven.Pathfinding.Util.Nodes {
+namespace Raven.Pathfinding.Framework.Nodes {
     public interface INodeMap {
         Node[ , ] Map { get; }
 

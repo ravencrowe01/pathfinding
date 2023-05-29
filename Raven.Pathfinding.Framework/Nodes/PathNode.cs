@@ -1,4 +1,4 @@
-namespace Raven.Pathfinding.Util.Nodes {
+namespace Raven.Pathfinding.Framework.Nodes {
     public class PathNode {
         public Node Node { get; private set; }
         public PathNode? Parent { get; private set; }
