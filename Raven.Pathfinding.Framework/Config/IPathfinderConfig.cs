@@ -6,5 +6,6 @@ namespace Raven.Pathfinding.Framework.Config {
         public Node Start { get; set; }
         public Node Target { get; set; }
         public Node[ , ] Map { get; set; }
+        public bool CheckDiags { get; set; }
     }
 }

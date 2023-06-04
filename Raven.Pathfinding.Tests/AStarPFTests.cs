@@ -16,7 +16,8 @@ public class Tests {
         _configA = new PathfinderConfig {
             Start = new Node(true, new Coordinate(0, 0)),
             Target = new Node(true, new Coordinate(4, 4)),
-            Map = BuildNodeMapA()
+            Map = BuildNodeMapA(),
+            CheckDiags = false
         };
 
         _configAPath = new List<Node> {
@@ -120,5 +121,6 @@ public class Tests {
         public Node Start { get; set; }
         public Node Target { get; set; }
         public Node[ , ] Map { get; set; }
+        public bool CheckDiags { get; set; }
     }
 }

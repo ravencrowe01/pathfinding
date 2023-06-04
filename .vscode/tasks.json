@@ -45,7 +45,7 @@
             "args": [ "test" ], 
             "options": 
                 { 
-                    "cwd": "${workspaceFolder}/Pathfinding.Tests", 
+                    "cwd": "${workspaceFolder}/Raven.Pathfinding.Tests", 
                     "env": 
                     { 
                         "VSTEST_HOST_DEBUG": "1" 
