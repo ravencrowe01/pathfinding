@@ -37,20 +37,20 @@ namespace Raven.Pathfinding.AStar {
             }
 
             var currentCords = _current.Node.Coordinates;
-            for (int i = 0; i < (_checkDiags ? 8 : 4); i++)
-                foreach (Direction dir in Enum.GetValues(typeof(Direction))) {
-                    var neighbor = currentCords + dir.ToCoordinate();
+            for (int i = 0; i < (_checkDiags ? 8 : 4); i++) {
+                var dir = (Direction) i;
+                var neighbor = currentCords + dir.ToCoordinate();
 
-                    if (IsCoordinateValid(neighbor)) {
-                        var node = _map[neighbor.X, neighbor.Y];
+                if (IsCoordinateValid(neighbor)) {
+                    var node = _map[neighbor.X, neighbor.Y];
 
-                        if (IsNodeQueueable(node)) {
-                            var pathNode = new PathNode(node, _current, CalculateHValue(_current.Node.Coordinates), _current.g + 1f);
+                    if (IsNodeQueueable(node)) {
+                        var pathNode = new PathNode(node, _current, CalculateHValue(_current.Node.Coordinates), _current.g + 1f);
 
-                            _open.Enqueue(pathNode, pathNode.f);
-                        }
+                        _open.Enqueue(pathNode, pathNode.f);
                     }
                 }
+            }
 
             PathNode? current;
 
