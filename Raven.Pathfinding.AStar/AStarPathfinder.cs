@@ -45,7 +45,7 @@ namespace Raven.Pathfinding.AStar {
                     var node = _map[neighbor.X, neighbor.Y];
 
                     if (IsNodeQueueable(node)) {
-                        var pathNode = new PathNode(node, _current, CalculateHValue(_current.Node.Coordinates), _current.g + 1f);
+                        var pathNode = new PathNode(node, _current, _current.g + 1f, CalculateHValue(_current.Node.Coordinates));
 
                         _open.Enqueue(pathNode, pathNode.f);
                     }
@@ -60,10 +60,6 @@ namespace Raven.Pathfinding.AStar {
             }
 
             _closed.Add(_current);
-
-            if (current.Node.Coordinates.X == 4 && +current.Node.Coordinates.Y == 4) {
-                var temp = current.Node == _target;
-            }
 
             _current = current;
 
